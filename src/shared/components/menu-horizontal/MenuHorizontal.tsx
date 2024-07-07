@@ -59,12 +59,12 @@ export const MenuHorizontal: React.FC<{ children: React.ReactNode }> = ({ childr
         <>
             <Box
                 width='100%'
-                minHeight="100vh"
+                minHeight="100%"
                 sx={{
                     background: !themeLight()
                         ? 'linear-gradient(to bottom right, #0f0c29, #302b63, #24243e)'
                         : 'linear-gradient(to bottom right, #0f0c29, #302b63, #24243e)'
-                }}>
+                        , minWidth: 550}}>
 
 
                 <Box color={themeLight() ? 'white' : 'black'} sx={{ width: "100%", height: "80px" }} display='flex' justifyContent='center' alignItems='center' >
