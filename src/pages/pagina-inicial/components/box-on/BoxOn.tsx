@@ -1,40 +1,30 @@
 import { Box, Button, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 interface IBoxOn {
     widthX?: string;
+    itemWidth?: string;
     heightY?: string;
+    top?: string;
     titulo?: string;
     texto1?: string;
     lista?: string[];
-    buttonName?: string;
-    to: string;
     color: string;
-    exibirButton?: boolean;
-    top?: string;
-    itemWidth?: string;
-    mostrarImagem?: boolean;
+    to: string;
+    buttonName?: string;
     imagem?: string;
+    exibirButton?: boolean;
+    mostrarImagem?: boolean;
+    icon?: boolean;
 }
 
-export const BoxOn: React.FC<IBoxOn> = ({ titulo, texto1, lista, buttonName, to, color, exibirButton, top = '3vh', widthX = '70vh', heightY = '50vh', itemWidth = '60%', mostrarImagem = false, imagem}) => {
+export const BoxOn: React.FC<IBoxOn> = ({ titulo, texto1, lista, buttonName, to, color, exibirButton, top = '3vh', widthX = '70vh', heightY = '50vh', itemWidth = '60%', mostrarImagem = false, imagem, icon}) => {
 
     const theme = useTheme()
 
     const smDown = useMediaQuery(theme.breakpoints.down('sm'))
 
     const xlDown = useMediaQuery(theme.breakpoints.down('xl'))
-
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        if (to.startsWith('http')) {
-            window.location.href = to;
-        } else {
-            navigate(to);
-        }
-    };
 
     return (
         <Box component={Paper} variant="outlined" display={"flex"} flexDirection={"column"} alignItems={'center'} sx={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', width: widthX, height: heightY, marginTop: '10vh' }}>
@@ -79,7 +69,7 @@ export const BoxOn: React.FC<IBoxOn> = ({ titulo, texto1, lista, buttonName, to,
 
 
             {exibirButton && <Box display="flex" flex={1} justifyContent="center" alignItems="flex-end" width="100%" sx={{ mb: '2vh', marginBottom: '6vh' }}>
-                <Button variant="contained" sx={{ width: '15vh', height: '5vh', bgcolor: '#5be9b9', color: 'black' }} onClick={handleClick} >
+                <Button variant="contained" sx={{ width: '15vh', height: '5vh', bgcolor: '#5be9b9', color: 'black' }} onClick={() => { window.open(to, '_blank'); }} >
                     {buttonName}
                 </Button>
             </Box>}

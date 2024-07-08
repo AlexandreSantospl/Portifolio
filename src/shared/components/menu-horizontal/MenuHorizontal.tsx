@@ -70,9 +70,9 @@ export const MenuHorizontal: React.FC<{ children: React.ReactNode }> = ({ childr
                 <Box color={themeLight() ? 'white' : 'black'} sx={{ width: "100%", height: "80px" }} display='flex' justifyContent='center' alignItems='center' >
                     <Tabs >
                         <ItemsLinkProps label="Pagina Inicial" to="pagina-inicial" />
-                        <ItemsLinkProps label="Projetos" to="contato" />
+                        <ItemsLinkProps label="Apresentação" to="contato" />
                         <ItemsLinkProps label="Conhecimentos" to="contato" />
-                        <ItemsLinkProps label="Experiencias" to="pagina-inicial" />
+                        <ItemsLinkProps label="Projetos" to="pagina-inicial" />
                         <ItemsLinkProps label="Contato" to="contato" />
                         <Divider variant="middle" orientation="vertical"/>
                         {/* <ItemsLinkProps onClick={toggleTheme} icon={themeLight() ? "sunny" : "bedtime"} to="" label="x"/> */}

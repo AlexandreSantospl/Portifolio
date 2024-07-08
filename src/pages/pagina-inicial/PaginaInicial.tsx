@@ -1,7 +1,13 @@
 import { Avatar, Box, Divider, Paper, Typography, useMediaQuery, useTheme } from "@mui/material"
-import { BoxOn } from "./components"
+import { BoxOn, ButtonIcon, IButtonIcon } from "./components"
 import { RTypography } from "./components/responsive-typography/RTypography"
 import { SingleBoxAll } from "./components/single-box/SingleBoxAll"
+
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import EmailSharpIcon from '@mui/icons-material/EmailSharp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const PaginaInicial: React.FC = () => {
 
@@ -22,6 +28,14 @@ export const PaginaInicial: React.FC = () => {
     const Frameworks = ['React', 'NodeJs', 'Express.Js']
 
     const outros = ['Material UI', 'GitHub', 'MongoDb', 'Sql', 'Json-Server', 'Bcrypt', 'Passport', 'Bootstrap']
+
+    const contatos: IButtonIcon[] = [
+        { icon: <InstagramIcon />, to: 'https://www.instagram.com/aleexanduarte/' },
+        { icon: <LinkedInIcon />, to: 'https://www.linkedin.com/in/alexandre-silva-duarte-dos-santos-862988202/' },
+        { icon: <EmailSharpIcon />, to: 'mailto:alexandresantospl283@gmail.com' },
+        { icon: <FacebookIcon />, to: 'https://www.facebook.com/matsudamlgoflgs/' },
+        { icon: <WhatsAppIcon />, to: 'https://wa.me/5553991085073' },
+    ]
 
     const boxWidth = (xlDown ? '38vh' : '50vh');
 
@@ -157,7 +171,7 @@ export const PaginaInicial: React.FC = () => {
                 <Box component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
 
                     <RTypography textH="h4" smTextH="h4" mdTextH="h4" textColor="white" top="10vh" text="Apresentação" />
-                    {/* ksdksdksdksdkksdkdsk */}
+
                     {lgDown
                         ? <SingleBoxAll
                             object={boxes}
@@ -242,13 +256,6 @@ export const PaginaInicial: React.FC = () => {
                 </Box>
                 <Divider sx={{ marginTop: '2vh' }} />
 
-
-
-
-
-
-
-
                 {/* Projetos */}
                 <Box component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
 
@@ -294,6 +301,28 @@ export const PaginaInicial: React.FC = () => {
                         <Divider />
                     </Box>
                 </Box >
+                <Divider sx={{ marginTop: '2vh' }} />
+
+                {/* Contato */}
+                <Box component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
+                    <RTypography textH="h4" smTextH="h4" mdTextH="h4" top="10vh" textColor="black" text="Contato" />
+
+                    <RTypography textH="h5" text="Vivendo, aprendendo e melhorando um dia de cada vez." top="2vh" />
+
+                    <ButtonIcon
+                        lista={contatos}
+                        widthX={mdDown ? '60vh' : lgDown ? '80vh' : xlDown ? '100vh' : '120vh'}
+                        heightY={'20vh'}
+                        top="5vh"
+                    />
+
+                    <Divider sx={{ m: '3vh 0' }} />
+
+                    <RTypography textH="h6" text="Handcrafted by me Alexandre Santos" />
+
+                    <Divider sx={{ m: '1vh 0' }} />
+
+                </Box>
                 <Divider sx={{ marginTop: '2vh' }} />
 
             </Box>

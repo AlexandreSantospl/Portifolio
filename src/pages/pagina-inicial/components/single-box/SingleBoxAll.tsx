@@ -44,7 +44,7 @@ export const SingleBoxAll: React.FC<ISingleBoxAll> = ({ mdWidth, smWidth, object
     return (
         <>
             <Box display={'flex'} sx={{ width: (smDown ? smWidth : mdWidth) }}>
-                <Button onClick={handlePrev} sx={{ color: 'white', maxHeight: 500, marginTop: '10vh' }}>
+                <Button onClick={handlePrev} sx={{ color: (currentObject.white ? 'white' : 'black'), maxHeight: 500, marginTop: '10vh' }}>
                     <Icon>arrow_backIos</Icon>
                 </Button>
 
@@ -61,7 +61,7 @@ export const SingleBoxAll: React.FC<ISingleBoxAll> = ({ mdWidth, smWidth, object
                     top='3vh'></BoxOn>
 
 
-                <Button onClick={handleNext} sx={{ color: 'white', maxHeight: 500, marginTop: '10vh' }}>
+                <Button onClick={handleNext} sx={{ color: (currentObject.white ? 'white' : 'black'), maxHeight: 500, marginTop: '10vh' }}>
                     <Icon>arrow_forwardIos</Icon>
                 </Button>
             </Box>
