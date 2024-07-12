@@ -78,7 +78,7 @@ export const PaginaInicial: React.FC = () => {
             titulo: "Setor de Compras",
             img: "https://i.pinimg.com/originals/32/26/b7/3226b7733f8faa727dea4350e2b22513.png",
             button: "Mais Sobre",
-            link: "#",
+            link: "https://github.com/AlexandreSantospl/SetorDeCompras",
             mostrarTitulo: true,
             mostrarImg: true,
             mostrarButton: true,
@@ -88,7 +88,7 @@ export const PaginaInicial: React.FC = () => {
             titulo: "Tarefas",
             img: "https://i.pinimg.com/originals/80/43/af/8043afaff4b3c73741bac9b0c2cf5bb4.png",
             button: "Mais Sobre",
-            link: "#",
+            link: "https://github.com/AlexandreSantospl/logintarefas",
             mostrarTitulo: true,
             mostrarImg: true,
             mostrarButton: true,
@@ -268,7 +268,7 @@ export const PaginaInicial: React.FC = () => {
                                 titulo="Setor de Compras"
                                 exibirButton
                                 buttonName="Mais Sobre"
-                                to="#"
+                                to="https://github.com/AlexandreSantospl/SetorDeCompras"
                                 color="white"
                                 widthX={boxWidth}
                                 mostrarImagem
@@ -278,7 +278,7 @@ export const PaginaInicial: React.FC = () => {
                                 titulo="Tarefas"
                                 exibirButton
                                 buttonName="Mais Sobre"
-                                to="#"
+                                to="https://github.com/AlexandreSantospl/logintarefas"
                                 color="white"
                                 widthX={boxWidth}
                                 mostrarImagem
