@@ -41,7 +41,7 @@ export const MenuLateral: React.FC<{ children: React.ReactNode }> = ({ children 
     const { themeName, toggleTheme } = useAppThemeContext();
     
     const themeLight = useCallback(() => {
-        if (themeName === 'light') return true;
+        if (themeName === "light") return true;
         return false;
     }, [themeName])
     
