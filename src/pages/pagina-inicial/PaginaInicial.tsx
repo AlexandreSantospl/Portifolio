@@ -141,7 +141,7 @@ export const PaginaInicial: React.FC = () => {
         <>
             <Box >
                 {/* Inicial */}
-                <Box component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
+                <Box id="pagina-inicial"  component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
 
                     <RTypography textH="h3" mdTextH="h4" smTextH="h5" WrapX="nowrap" text={titulo} top="2vh" />
 
@@ -165,10 +165,10 @@ export const PaginaInicial: React.FC = () => {
 
                     {smDown ? undefined : <Divider sx={{ m: (mdDown ? '0vh 0' : '1vh 0') }} />}
                 </Box>
-                <Divider sx={{ marginTop: '2vh' }} />
+                <Divider id="apresentacao"  sx={{ marginTop: '2vh' }} />
 
                 {/* Sobre mim */}
-                <Box component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
+                <Box  component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
 
                     <RTypography textH="h4" smTextH="h4" mdTextH="h4" textColor="white" top="10vh" text="Apresentação" />
 
@@ -216,10 +216,10 @@ export const PaginaInicial: React.FC = () => {
                         <Divider />
                     </Box>
                 </Box >
-                <Divider sx={{ marginTop: '2vh' }} />
+                <Divider  sx={{ marginTop: '2vh' }} />
 
                 {/* Conhecimento */}
-                <Box component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
+                <Box id="conhecimentos" component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
                     <Typography variant="h4" sx={{ color: 'black', marginTop: '10vh' }}>
                         Conhecimento
                     </Typography>
@@ -254,10 +254,10 @@ export const PaginaInicial: React.FC = () => {
 
                     <Divider sx={{ m: '3vh 0' }} />
                 </Box>
-                <Divider sx={{ marginTop: '2vh' }} />
+                <Divider id="projetos" sx={{ marginTop: '2vh' }} />
 
                 {/* Projetos */}
-                <Box component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
+                <Box  component={Paper} variant="outlined" display='flex' flexDirection="column" justifyContent='center' alignItems='center' sx={{ m: 3, backgroundColor: 'rgba(0, 0, 0, 0.2)', minWidth: 500 }} >
 
                     <RTypography textH="h4" smTextH="h4" mdTextH="h4" textColor="white" top="10vh" text="Projetos" />
 
@@ -301,10 +301,10 @@ export const PaginaInicial: React.FC = () => {
                         <Divider />
                     </Box>
                 </Box >
-                <Divider sx={{ marginTop: '2vh' }} />
+                <Divider id="contato" sx={{ marginTop: '2vh' }} />
 
                 {/* Contato */}
-                <Box component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
+                <Box  component={Paper} variant="outlined" display="flex" flexDirection="column" justifyContent='center' alignItems='center' gap={2.5} sx={{ m: 3, width: 'auto', minWidth: 500 }}>
                     <RTypography textH="h4" smTextH="h4" mdTextH="h4" top="10vh" textColor="black" text="Contato" />
 
                     <RTypography textH="h5" text="Vivendo, aprendendo e melhorando um dia de cada vez." top="2vh" />
