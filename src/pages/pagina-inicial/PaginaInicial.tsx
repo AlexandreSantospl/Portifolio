@@ -42,7 +42,7 @@ export const PaginaInicial: React.FC = () => {
     const boxes = [
         {
             titulo: "Quem sou",
-            texto: "Meu nome é Alexandre, tenho 23 anos e moro em Porto Alegre. Estou sempre em busca de novas oportunidades para aprimorar meus conhecimentos na área.",
+            texto: "Meu nome é Alexandre, tenho 23 anos e moro em Porto Alegre.",
             button: "INSTAGRAM",
             link: "https://www.instagram.com/aleexanduarte/",
             mostrarTitulo: true,
@@ -52,7 +52,7 @@ export const PaginaInicial: React.FC = () => {
         },
         {
             titulo: "Sobre mim",
-            texto: "Sou um estudante de Analise e desenvolvimento de sistemas na Unisinos, aprendendo além do curso diversas tecnologias.",
+            texto: "Sou um estudante de Analise e desenvolvimento de sistemas, estudando diversas tecnologias.",
             button: "LINKEDIN",
             link: "https://www.linkedin.com/in/alexandre-silva-duarte-dos-santos-862988202/",
             mostrarTitulo: true,
@@ -62,7 +62,7 @@ export const PaginaInicial: React.FC = () => {
         },
         {
             titulo: "Objetivo",
-            texto: "Buscando criar projetos desafiadores de maneira organizada, estou disposto a trabalhar tanto com Back-End quanto com Front-End.",
+            texto: "Criando projetos de maneira organizada, estou disposto a trabalhar com Back-End ou Front-End.",
             button: "GITHUB",
             link: "https://github.com/AlexandreSantospl",
             mostrarTitulo: true,
