@@ -159,7 +159,7 @@ export const PaginaInicial: React.FC = () => {
                             maxWidth: { lg: 600, md: 600 },
                             marginTop: "2vh"
                         }}
-                        src="https://mattfarley.ca/img/hero-devices.svg">
+                        src="https://media.licdn.com/dms/image/D4D03AQGpFDZPMUHiSA/profile-displayphoto-shrink_100_100/0/1719002791912?e=1727308800&v=beta&t=MkpG09f7Xt729Uq71JT01R5ufxmrOvu59zthBQZODIE">
 
                     </Box>
 
